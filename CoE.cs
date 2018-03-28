@@ -4,7 +4,7 @@ using Turbo.Plugins.Default;
 
 namespace Turbo.Plugins.rat
 {
-    public class RatConventionOfElementsBuffListPlugin : BasePlugin, IInGameTopPainter
+    public class RatCoEPlugin : BasePlugin, IInGameTopPainter
     {
 
         public bool HideWhenUiIsHidden { get; set; }
@@ -14,7 +14,7 @@ namespace Turbo.Plugins.rat
 
         public BuffRuleCalculator _ruleCalculator { get; set; }
 
-        public RatConventionOfElementsBuffListPlugin()
+        public RatCoEPlugin()
         {
             Enabled = true;
         }
