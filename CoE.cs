@@ -8,9 +8,7 @@ namespace Turbo.Plugins.rat
     {
 
         public bool HideWhenUiIsHidden { get; set; }
-        public BuffPainter RatBuffPainter { get; set; }
-        public float POpacity { get; set; }
-        public float PSizeMultiplier { get; set; }
+        public RatBuffPainter BuffPainter { get; set; }
         public float XPos { get; set; }
         public float YPos { get; set; }
 
@@ -30,9 +28,10 @@ namespace Turbo.Plugins.rat
             YPos = 0.2f;
 
             HideWhenUiIsHidden = false;
-            BuffPainter = new BuffPainter(Hud, true)
+            BuffPainter = new RatBuffPainter(Hud, true)
             {
                 Opacity = 1.0f,
+                DetailedSeconds = 1.0f,
                 TimeLeftFont = Hud.Render.CreateFont("tahoma", 8, 255, 255, 255, 255, true, false, 255, 0, 0, 0, true),
             };
 
